@@ -1,0 +1,391 @@
+/*
+CSS Name: PB Style
+Description: NextGEN Default Gallery Stylesheet
+Author: Alex Rabe
+Version: 2.11
+
+This is a template stylesheet that can be used with NextGEN Gallery. I tested the
+styles with a default theme Kubrick. Modify it when your theme struggle with it,
+it's only a template design
+
+*/
+
+/* ----------- Album Styles Extend -------------*/
+
+.ngg-albumoverview {
+	margin-top: 30px;
+	clear:both; 
+}
+
+.ngg-album {
+	background: none repeat scroll 0 0 #F7F9FD;
+	border: 1px solid #E7F0F5;
+	float: left;
+	height: 110px;
+	line-height: 100%;
+	margin: 0 12px 8px 0;
+	overflow: auto;
+	padding: 10px 8px 2px 10px;
+	width: 288px;
+	cursor: pointer;
+	}
+
+.ngg-album:hover {
+	border: 1px solid #B3DCEC;
+	}
+
+.ngg-albumtitle {
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.ngg-thumbnail {
+	float: left;
+	margin-right: 12px;
+}
+
+	.ngg-thumbnail img {
+		position:relative;
+	}
+
+.ngg-description p {
+	text-align: left !important;
+	text-indent: 0 !important;
+	font-size: 12px !important;
+}
+
+.ngg-description p.anzahl {
+	color: silver;
+	text-align: right !important;
+}
+
+/* ----------- Gallery style -------------*/
+
+.ngg-galleryoverview {
+	margin-top: 30px;
+	clear:both;
+	}
+
+.ngg-galleryoverview .desc {
+/* required for description */
+   margin:0px 10px 10px 0px;
+   padding:5px;
+}
+
+.ngg-gallery-thumbnail-box {
+	float: left;
+}
+
+.ngg-gallery-thumbnail {
+	float: left;
+	margin-right: 5px;
+	text-align: center;
+}
+
+.ngg-gallery-thumbnail img {
+	background-color: #F6F6F6;
+	border: 1px solid #E6E6E6;
+	display: block;  
+	margin: 4px 0px 4px 5px;
+	padding: 8px;
+	position:relative;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.ngg-gallery-thumbnail img:hover {
+	background-color: #F3F3F3;
+	border: 1px solid #d0d0d0;
+} 
+
+.ngg-gallery-thumbnail span {
+	/* Images description */
+	font-size:90%;
+	padding-left:5px;
+	display:block;
+}
+
+.ngg-clear {
+	clear: both;
+}
+
+/* ----------- Gallery navigation -------------*/
+
+.ngg-navigation {
+	clear:both !important;
+	display:block !important;
+	padding-top: 15px;
+	padding-bottom: 2px;
+	text-align:center;
+}
+
+.ngg-navigation span {
+	font-weight:bold;
+	margin:0pt 6px;
+}
+
+.ngg-navigation a.page-numbers,
+.ngg-navigation a.next,
+.ngg-navigation a.prev, 
+.ngg-navigation span.page-numbers,
+.ngg-navigation span.next,
+.ngg-navigation span.prev {
+	padding: 5px 8px 5px 8px;
+	/* 'viel coolerer buttons' effekt fuer dirk */
+	margin: 1px 0 0 2px;
+	border: 1px solid #eaeaea;
+	/* IE<=9 Fallback */ background: #F1F1F1 url(images/nav_arw-right.gif) no-repeat 3px center;
+	background: no-repeat 3px center, -moz-linear-gradient(top,  #F1F1F1, #F5F5F5);
+	background: no-repeat 3px center, -webkit-gradient(linear, left top, left bottom, color-stop(#F1F1F1), color-stop(#F5F5F5));
+	background: no-repeat 3px center, -webkit-linear-gradient(top,  #F1F1F1,#F5F5F5);
+	background: no-repeat 3px center, -o-linear-gradient(top,  #F1F1F1,#F5F5F5);
+	background: no-repeat 3px center, -ms-linear-gradient(top,  #F1F1F1,#F5F5F5);
+	background: no-repeat 3px center, linear-gradient(top,  #F1F1F1,#F5F5F5);
+	text-shadow: 0 -1px 1px white;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.ngg-navigation .current {
+	color: #114477;
+	padding: 5px 9px 5px 9px;
+	}
+
+.ngg-navigation a.page-numbers:hover,
+.ngg-navigation a.next:hover,
+.ngg-navigation a.prev:hover, 
+.ngg-navigation span.page-numbers:hover,
+.ngg-navigation span.next:hover,
+.ngg-navigation span.prev:hover {
+		color: #147;
+		text-decoration: underline;
+		border: 1px solid #d0d0d0;
+}
+
+/* ----------- Image browser style -------------*/
+
+.ngg-imagebrowser {
+	
+}
+
+.ngg-imagebrowser h3 {
+	text-align:center;
+}
+
+.ngg-imagebrowser img {
+	border:1px solid #A9A9A9;
+	margin-top: 10px; 
+	margin-bottom: 10px; 
+	width: 100%;
+	display:block !important;
+	padding:5px;
+}
+
+.ngg-imagebrowser-nav {
+	padding:5px;
+	margin-left:10px;	
+}
+
+.ngg-imagebrowser-nav .back {
+	float:left;
+	border:1px solid #DDDDDD;
+	margin-right:3px;
+	padding:3px 7px;
+}
+
+.ngg-imagebrowser-nav .next {
+	float:right;
+	border:1px solid #DDDDDD;
+	margin-right:3px;
+	padding:3px 7px;
+}
+
+.ngg-imagebrowser-nav .counter {
+	text-align:center;
+	font-size:0.9em !important;
+}
+
+.exif-data {
+  	margin-left: auto !important;
+    margin-right: auto !important;	
+}
+
+/* ----------- Slideshow -------------*/
+.slideshow {
+	margin-left: auto; 
+	margin-right: auto;
+	text-align:center;
+	outline: none;	
+}
+
+div.slideshowlink {
+	text-align: right;
+	margin: 0 5px 10px 0;
+	}
+
+a.slideshowlink {
+	padding: 5px 10px 5px 15px;
+	border: 1px solid #eaeaea;
+	width: 200px;
+	/* IE<=9 Fallback */ background: #F1F1F1 url(images/nav_arw-right.gif) no-repeat 3px center;
+	background: url(images/nav_arw-right.gif) no-repeat 3px center, -moz-linear-gradient(top,  #F1F1F1, #F5F5F5);
+	background: url(images/nav_arw-right.gif) no-repeat 3px center, -webkit-gradient(linear, left top, left bottom, color-stop(#F1F1F1), color-stop(#F5F5F5));
+	background: url(images/nav_arw-right.gif) no-repeat 3px center, -webkit-linear-gradient(top,  #F1F1F1,#F5F5F5);
+	background: url(images/nav_arw-right.gif) no-repeat 3px center, -o-linear-gradient(top,  #F1F1F1,#F5F5F5);
+	background: url(images/nav_arw-right.gif) no-repeat 3px center, -ms-linear-gradient(top,  #F1F1F1,#F5F5F5);
+	background: url(images/nav_arw-right.gif) no-repeat 3px center, linear-gradient(top,  #F1F1F1,#F5F5F5);
+	text-shadow: 0 -1px 1px white;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	}
+
+	a.slideshowlink:hover {
+		color: #147;
+		text-decoration: underline;
+		border: 1px solid #d0d0d0;
+		background: #f5f5f5 url(images/nav_arw-right-dark.gif) no-repeat 3px center;
+		}
+
+
+
+
+
+
+/* ----------- JS Slideshow -------------*/
+.ngg-slideshow {
+    overflow:hidden;
+    position: relative;
+}
+
+.ngg-slideshow * {
+    vertical-align:middle;
+}
+
+/* See also : http://www.brunildo.org/test/img_center.html */
+.ngg-slideshow-loader{
+    display: table-cell;
+    text-align: center;
+    vertical-align:middle;
+}
+
+.ngg-slideshow-loader img{
+    background: none !important; 
+    border: 0 none !important;
+    margin:auto !important; 
+}
+
+/* ----------- Single picture -------------*/
+.ngg-singlepic {
+	background-color:#FFFFFF;
+	display:block;  
+	padding:4px;
+}
+
+.ngg-left {
+	float: left;
+	margin-right:10px;
+}
+
+.ngg-right {
+	float: right;
+	margin-left:10px;
+}
+
+.ngg-center {
+  	margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* ----------- Sidebar widget -------------*/
+.ngg-widget,
+.ngg-widget-slideshow {
+	overflow: hidden;
+	margin:0pt;
+	padding:5px 0px 0px 0pt;
+	text-align:left;
+}
+
+.ngg-widget img {
+	border:2px solid #A9A9A9;
+	margin:0pt 2px 2px 0px; 
+	padding:1px; 
+}
+
+/* ----------- Related images -------------*/
+.ngg-related-gallery {
+	background:#F9F9F9;
+	border:1px solid #E0E0E0;
+	overflow:hidden;
+	margin-bottom:1em;
+	margin-top:1em;
+	padding:5px;
+}
+.ngg-related-gallery img {
+	border: 1px solid #DDDDDD;
+	float: left;
+	margin: 0pt 3px;
+	padding: 2px;
+	height: 50px;
+	width:  50px;
+}
+
+.ngg-related-gallery img:hover {
+	border: 1px solid #000000;
+} 
+
+/* ----------- Gallery list -------------*/
+
+.ngg-galleryoverview ul li:before {
+	content: '' !important;
+}
+
+.ngg-gallery-list {
+	list-style-type:none;
+	padding: 0px !important;
+	text-indent:0px !important;	
+}
+
+.ngg-galleryoverview div.pic img{
+	width: 100%;	
+}
+
+.ngg-gallery-list li {
+	float:left;
+	margin:0 2px 0px 2px !important;
+	overflow:hidden;
+}
+
+.ngg-gallery-list li a {
+	border:1px solid #CCCCCC;
+	display:block;
+	padding:2px;
+}
+
+.ngg-gallery-list li.selected a{
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:#000000 none repeat scroll 0 0;
+}
+
+.ngg-gallery-list li img {
+	height:40px;
+	width:40px;	
+}
+
+li.ngg-next, li.ngg-prev {
+	height:40px;
+	width:40px;	
+	font-size:3.5em;
+}
+
+li.ngg-next a, li.ngg-prev a  {
+	padding-top: 10px;
+	border: none;
+	text-decoration: none;
+}
