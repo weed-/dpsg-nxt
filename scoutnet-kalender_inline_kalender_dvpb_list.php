@@ -34,6 +34,7 @@ date_default_timezone_set('Europe/Berlin');
 if (!function_exists('snkshort_url'))
 {
 	function snkshort_url($url, $length = 100) {
+		$u = NULL;
 		// parsen der getrimmten der URL
 		$url = parse_url(trim($url));
 		// den url[path] in einen array schieben und bereinigen

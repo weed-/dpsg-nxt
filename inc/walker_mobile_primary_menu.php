@@ -1,7 +1,9 @@
 <?php 
 
     class Walker_Mobile_Primary_Menu extends Walker_Nav_Menu {
-        public function start_el(&$output, $data_object, $depth, $args) {
+            // ORIGINAL: public function start_el(&$output, $data_object, $depth, $args) {
+            public function start_el(&$output, $data_object, $depth = 0, $args = NULL, $current_object_id = 0) {
+
             $tmp_output = '';
             parent::start_el($tmp_output, $data_object, $depth, $args);
 

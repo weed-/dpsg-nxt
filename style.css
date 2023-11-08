@@ -1,12 +1,12 @@
 /*
-Theme Name: DPSG nxt
-Theme URI: https://www.dpsg-paderborn.de
+Theme Name: DPSG Paderborn
+Theme URI: www.dpsg-paderborn.de
 Author: Bjoern, DATA-Systems GmbH
 Author URI: https://www.data-systems.de
 Description: 
-Version: 1.2
+Version: 1.0
 License: Fuer Pfadfinder frei nutz-, fork- und veraenderbar
-License URI: http://www.gnu.de/documents/gpl.de.html
+License URI: 
 Tags: blog, left-sidebar, custom-header, custom-menu, featured-images, sticky-post
 Text Domain: dpsg_pb_2021
 */
@@ -299,20 +299,24 @@ div.suche-mobile {
 
 /* Navigation */
 #quicklink-container-1 {
+    /* background-color: #bfbfbf;  */
     height: 30px;
 }
 
 #quicklink-container-2 {
+    /* background-color: #d9d9d9;  */
     max-width: 990px; 
     margin: 0 auto; 
     height: 100%;
 }
 
 #primary-container-1 {
+    /* background-color: #0c6ba7;  */
     height: 50px;
 }
 
 #primary-container-2 {
+    /* background-color: #0e84cd;  */
     max-width: 990px; 
     margin: 0 auto; 
     height: 100%;
@@ -466,10 +470,13 @@ div.suche-mobile {
 /* .primary-nav-desktop-level { */
 #nav-desktop-ul-menu2>li>ul>li>a, #nav-desktop-ul-menu2>li>ul>li>ul>li>a {
     text-align: left; 
+    /* border-bottom: 1px solid #bfbfbf;  */
+    /* padding-bottom: 5px; */
 }
 
 /* .primary-nav-desktop-level:hover { */
 #nav-desktop-ul-menu2 .sub-menu a:hover, #nav-desktop-ul-menu2 .sub-menu .sub-menu a:hover {
+/* #nav-desktop-ul-menu2>li>ul>li>a:hover, #nav-desktop-ul-menu2>li>ul>li>ul>li>a:hover { */
     color: black;
     text-decoration: underline;
 }
@@ -585,6 +592,7 @@ div.nav-mobile-menu1 {
 }
 
 #nav-mobile-ul-menu > li > .sub-menu > li {
+    /* TODO beim letzten li nicht anzeigen */
     border-bottom: 1px solid white; 
 }
 
@@ -617,7 +625,7 @@ div.nav-mobile-menu1 {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-/* Home */
+/* Home -------- begin*/
 .slider-nav-delimiter {
     padding: 0 !important;
 }
@@ -663,9 +671,11 @@ div.nav-mobile-menu1 {
     top: 250px; 
     max-width: 500px; 
     background-color: #009fe3; 
+    /* font-size: 30px;  */
     font-weight: bold; 
     padding: 3px; 
     color: white;
+
     display: none;
 }
 
@@ -733,6 +743,9 @@ h2.li-postlist-item-title a {
 }
 
 .li-postlist-item-thumbnail a img {
+    /* width: auto; */
+    /* height: 100px; */
+
     overflow: hidden;
     background-size: cover;
     background-position: center;
@@ -753,7 +766,7 @@ a.readmore, a.readmore:visited {
         text-decoration: none !important;
     }
 
-/* Ende Home*/
+/* Home -------- end*/
 
 #comments {
     margin-top: 100px;
@@ -928,14 +941,19 @@ footer {
     -moz-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
+
+    /* padding-bottom: 15px; */
 }
 
 #footer-main-container {
     padding-top: 15px;
     padding-bottom: 15px;
+    /* border: 1px solid red; */
+    /* background-color: #ccc; */
 }
 
 #footer-content-container {
+    /* border: 1px solid red; */
     max-width: 990px; 
     margin: 0 auto;
 }
@@ -1449,6 +1467,12 @@ span.day-frei {
 	color: #5b5b5b;
 }
 
+/* Plugin: Draw Attention Pro -------------------------------- */
+/* Fix: Lange Bezirksnamen passen nicht in die Anzeigebox */
+div.hotspots-interaction div.hotspots-placeholder div.hotspot-info.visible {
+    overflow: visible;
+}
+
 
 /* Plugin Imagegely/Nextgen/Whatever Gallery -------------------------------- */
 .ngg-imagebrowser h3 {
@@ -1557,7 +1581,7 @@ div.swp-form-cont .swp-col input[type=submit] {
     padding: 2px 10px 2px 10px;
 }
 
-/* Hack: "Leere" Links im Menue in der Sidebar optisch unklickbar machen */
+/* Hack: "Leere" Links im Menue in der Sidebar "ausblenden" */
 div.sidebar-menu-container a:not([href]),
 div.sidebar-menu-container a[href=""],
 div.sidebar-menu-container a[href="#"] {

@@ -18,7 +18,9 @@
             ?>
         </title>
         <meta name="robots" content="index, follow" />
-		<meta name="author" content="Bjoern, DPSG Paderborn">
+        <meta name="keywords" content="DPSG Paderborn, Dioezesanverband, DPSG, Rovercamp, Roverlager, Pfadfinderhaus, Selbstversorger, Rüthen, Ruthen, Euelenspiegel, Seehause, Zeltplatz, Pfadfinderzeltplatz, Dioezesanzentrum, Diözesanzentrum Rüthen" />
+		<meta name="author" content="DPSG Paderborn">
+        <meta name="description" content="DPSG Diözesanverbandes Paderborn, Zeltplatz und Haus Diözesanzentrum Rüthen, Selbstversorgerhaus Seehause, Selbstversorgerhaus Bielefeld Brackwede, Zoom, Rovercamp, Fahrt ins Grüne und mehr" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico">
         <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri(); ?>/images/apple-touch-icon.png">
