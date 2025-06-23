@@ -13,7 +13,7 @@ Dieses Theme, ausgenommen die Fonts, unterliegt der **GPLv3**. Das bedeutet ...
 
 Das war es auch schon. Mach einfach was du möchtest 🙂 und schick uns deine Fehlerbehebungen, Änderungen, Issues, Tippfehler und so weiter.
 
-##Features
+## Features
 - Komplett Responsiv und Touch-Kompatibel (auch mit verschachtelten Menüs)
 - WordPress 6.2.2+
     - Unterstützt alle WP Default Blocks (v6.2.2)
